@@ -34,5 +34,5 @@ jobs:
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: curl "$RENDER_DEPLOY_HOOK"
         env:
-          RENDER_DEPLOY_HOOK:${{secrets.RENDER_DEPLOY_HOOK}}
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
 
