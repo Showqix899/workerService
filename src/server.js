@@ -12,9 +12,18 @@ const app = express()
 //json parser 
 app.use(express.json())
 
+//default message
+app.get("/",(req,res)=>{
+    return res.json({
+        message: "well come to worker service"
+    })
+})
+
 //health route 
 app.use("/api/health",(req,res)=>{
-    res.send("well come to the server. status 200 || ok")
+    res.json({
+        message:"server is fine",
+    })
 })
 
 //set routes 
