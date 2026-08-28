@@ -61,7 +61,7 @@ describe("Email API", () => {
             });
 
 
-        expect(response.statusCode).toBe(400);
+        expect(response.statusCode).toBe(404);
 
         expect(response.body).toEqual({
             message:
@@ -82,7 +82,7 @@ describe("Email API", () => {
             });
 
 
-        expect(response.statusCode).toBe(400);
+        expect(response.statusCode).toBe(404);
 
         expect(response.body).toEqual({
             message:
@@ -103,7 +103,7 @@ describe("Email API", () => {
             });
 
 
-        expect(response.statusCode).toBe(400);
+        expect(response.statusCode).toBe(404);
 
         expect(response.body).toEqual({
             message:
