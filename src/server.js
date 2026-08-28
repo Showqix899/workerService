@@ -1,5 +1,5 @@
 import express from "express"
-
+import cors from "cors"
 
 //import routes 
 import emailWorkerRoutes from "./routes/emailWorker.routes.js"
@@ -11,6 +11,8 @@ const app = express()
 
 //json parser 
 app.use(express.json())
+
+app.use(cors())
 
 //default message
 app.get("/",(req,res)=>{
